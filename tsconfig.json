@@ -16,19 +16,21 @@
     "noImplicitOverride": true,
 
     /* If transpiling with tsc: */
-    "module": "NodeNext",
+    // "module": "NodeNext",
+    // "outDir": "dist",
+    // "rootDir": "src",
+    // "sourceMap": true,
+    // /* AND if you're building for a library: */
+    // "declaration": true,
+    // /* AND if you're building for a library in a monorepo: */
+    // "declarationMap": true,
 
     /* If NOT transpiling with tsc: */
-    // "module": "Bundler",
+    "module": "Preserve",
 
-    "outDir": "dist",
-    "rootDir": "src",
-    "sourceMap": true,
 
-    /* AND if you're building for a library: */
-    "declaration": true
 
-    /* AND if you're building for a library in a monorepo: */
-    // "declarationMap": true
+    // Using a bundler? Uncomment the following:
+    "noEmit": true
   }
 }

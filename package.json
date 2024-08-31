@@ -12,6 +12,14 @@
     "type": "git",
     "url": "git+https://github.com/ecancino/tt-package-demo.git"
   },
+  "main": "dist/index.js",
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "import": "./dist/index.js",
+      "default": "./dist/index.cjs"
+    }
+  },
   "files": [
     "dist"
   ],
@@ -21,11 +29,16 @@
     "typescript": "^5.5.4"
   },
   "devDependencies": {
-    "prettier": "^3.3.3"
+    "@arethetypeswrong/cli": "^0.15.4",
+    "prettier": "^3.3.3",
+    "tsup": "^8.2.4"
   },
   "scripts": {
-    "build": "tsc",
-    "ci": "npm run build",
-    "format": "prettier --write ."
+    "build": "tsup",
+    "lint": "tsc",
+    "format": "prettier --write .",
+    "check-format": "prettier --check .",
+    "ci": "npm run lint && npm run check-format && npm run check-exports &&  npm run build",
+    "check-exports": "attw --pack . --ignore-rules=cjs-resolves-to-esm"
   }
 }
