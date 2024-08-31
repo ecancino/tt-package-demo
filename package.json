@@ -7,10 +7,7 @@
     "typescript"
   ],
   "homepage": "https://github.com/ecancino/tt-package-demo",
-  "bugs": {
-    "url": "https://github.com/ecancino/tt-package-demo/issues"
-  },
-  "author": "Matt Pocock <team@totaltypescript.com> (https://totaltypescript.com)",
+  "author": "Eduardo Cancino <ecancinozarate@gmail.com>",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ecancino/tt-package-demo.git"
@@ -18,5 +15,17 @@
   "files": [
     "dist"
   ],
-  "type": "module"
+  "type": "module",
+  "license": "MIT",
+  "dependencies": {
+    "typescript": "^5.5.4"
+  },
+  "devDependencies": {
+    "prettier": "^3.3.3"
+  },
+  "scripts": {
+    "build": "tsc",
+    "ci": "npm run build",
+    "format": "prettier --write ."
+  }
 }
