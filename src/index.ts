@@ -1,2 +1,1 @@
-export { add } from './utils';
-export { sum } from './utils';
+export { add, sum } from './utils';
