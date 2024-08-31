@@ -28,8 +28,6 @@
     /* If NOT transpiling with tsc: */
     "module": "Preserve",
 
-
-
     // Using a bundler? Uncomment the following:
     "noEmit": true
   }
