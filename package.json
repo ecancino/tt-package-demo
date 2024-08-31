@@ -1,0 +1,22 @@
+{
+  "name": "tt-package-demo",
+  "version": "1.0.0",
+  "description": "A demo package for Total TypeScript",
+  "keywords": [
+    "demo",
+    "typescript"
+  ],
+  "homepage": "https://github.com/ecancino/tt-package-demo",
+  "bugs": {
+    "url": "https://github.com/ecancino/tt-package-demo/issues"
+  },
+  "author": "Matt Pocock <team@totaltypescript.com> (https://totaltypescript.com)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ecancino/tt-package-demo.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "type": "module"
+}
