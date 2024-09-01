@@ -6,10 +6,6 @@ settings:
 
 importers:
   .:
-    dependencies:
-      typescript:
-        specifier: ^5.5.4
-        version: 5.5.4
     devDependencies:
       '@arethetypeswrong/cli':
         specifier: ^0.15.4
@@ -29,6 +25,9 @@ importers:
       tsup:
         specifier: ^8.2.4
         version: 8.2.4(postcss@8.4.41)(typescript@5.5.4)
+      typescript:
+        specifier: ^5.5.4
+        version: 5.5.4
       vitest:
         specifier: ^2.0.5
         version: 2.0.5

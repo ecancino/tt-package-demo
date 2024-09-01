@@ -25,10 +25,8 @@
   ],
   "type": "module",
   "license": "MIT",
-  "dependencies": {
-    "typescript": "^5.5.4"
-  },
   "devDependencies": {
+    "typescript": "^5.5.4",
     "@arethetypeswrong/cli": "^0.15.4",
     "@changesets/cli": "^2.27.7",
     "husky": "^9.1.5",
